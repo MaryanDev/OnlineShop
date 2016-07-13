@@ -3,3 +3,8 @@ E:\OnlineShop\OnlineShop\OnlineShop.Entities\bin\Debug\OnlineShop.Entities.pdb
 E:\OnlineShop\OnlineShop\OnlineShop.Entities\obj\Debug\OnlineShop.Entities.csprojResolveAssemblyReference.cache
 E:\OnlineShop\OnlineShop\OnlineShop.Entities\obj\Debug\OnlineShop.Entities.dll
 E:\OnlineShop\OnlineShop\OnlineShop.Entities\obj\Debug\OnlineShop.Entities.pdb
+E:\OnlineShop\OnlineShop\OnlineShop.Entities\bin\Debug\OnlineShop.Entities.dll.config
+E:\OnlineShop\OnlineShop\OnlineShop.Entities\bin\Debug\EntityFramework.dll
+E:\OnlineShop\OnlineShop\OnlineShop.Entities\bin\Debug\EntityFramework.SqlServer.dll
+E:\OnlineShop\OnlineShop\OnlineShop.Entities\bin\Debug\EntityFramework.xml
+E:\OnlineShop\OnlineShop\OnlineShop.Entities\bin\Debug\EntityFramework.SqlServer.xml

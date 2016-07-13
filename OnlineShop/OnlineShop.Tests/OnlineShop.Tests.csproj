@@ -53,6 +53,20 @@
     <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\OnlineShop.Entities\OnlineShop.Entities.csproj">
+      <Project>{aaccbd1d-233b-4060-9690-761524a9a4d3}</Project>
+      <Name>OnlineShop.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OnlineShop.Repositories\OnlineShop.Repositories.csproj">
+      <Project>{5c4eb623-b041-4a41-912a-ac1d22208861}</Project>
+      <Name>OnlineShop.Repositories</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OnlineShop.WebUI\OnlineShop.WebUI.csproj">
+      <Project>{35153dc6-9bf7-4a69-b2df-630470e6b35d}</Project>
+      <Name>OnlineShop.WebUI</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>

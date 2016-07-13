@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="7b14657a8ce64b92aa7807a48e0ae5f3" Name="Diagram1">
+        <EntityTypeShape EntityType="ShopModel.Administrator" Width="1.5" PointX="0.75" PointY="3.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShopModel.Basket" Width="1.5" PointX="5.25" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShopModel.Category" Width="1.5" PointX="0.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShopModel.Client" Width="1.5" PointX="3" PointY="8.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShopModel.Comment" Width="1.5" PointX="5.25" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShopModel.Product" Width="1.5" PointX="3" PointY="3" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShopModel.sysdiagram" Width="1.5" PointX="5.75" PointY="7" IsExpanded="true" />
+        <AssociationConnector Association="ShopModel.FK_Admin_To_Prod" ManuallyRouted="false" />
+        <AssociationConnector Association="ShopModel.FK_Basket_To_Client" ManuallyRouted="false" />
+        <AssociationConnector Association="ShopModel.FK_Basket_To_Prod" ManuallyRouted="false" />
+        <AssociationConnector Association="ShopModel.FK_Prod_To_Category" ManuallyRouted="false" />
+        <AssociationConnector Association="ShopModel.FK_Comment_To_Client" ManuallyRouted="false" />
+        <AssociationConnector Association="ShopModel.FK_Comment_To_Prod" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

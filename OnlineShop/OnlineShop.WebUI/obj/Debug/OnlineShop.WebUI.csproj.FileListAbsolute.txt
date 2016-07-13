@@ -44,3 +44,11 @@ E:\OnlineShop\OnlineShop\OnlineShop.WebUI\bin\System.Web.Mvc.xml
 E:\OnlineShop\OnlineShop\OnlineShop.WebUI\obj\Debug\OnlineShop.WebUI.csprojResolveAssemblyReference.cache
 E:\OnlineShop\OnlineShop\OnlineShop.WebUI\obj\Debug\OnlineShop.WebUI.dll
 E:\OnlineShop\OnlineShop\OnlineShop.WebUI\obj\Debug\OnlineShop.WebUI.pdb
+E:\OnlineShop\OnlineShop\OnlineShop.WebUI\bin\EntityFramework.dll
+E:\OnlineShop\OnlineShop\OnlineShop.WebUI\bin\EntityFramework.SqlServer.dll
+E:\OnlineShop\OnlineShop\OnlineShop.WebUI\bin\OnlineShop.Entities.dll
+E:\OnlineShop\OnlineShop\OnlineShop.WebUI\bin\OnlineShop.Repositories.dll
+E:\OnlineShop\OnlineShop\OnlineShop.WebUI\bin\OnlineShop.Entities.pdb
+E:\OnlineShop\OnlineShop\OnlineShop.WebUI\bin\OnlineShop.Repositories.pdb
+E:\OnlineShop\OnlineShop\OnlineShop.WebUI\bin\EntityFramework.xml
+E:\OnlineShop\OnlineShop\OnlineShop.WebUI\bin\EntityFramework.SqlServer.xml
