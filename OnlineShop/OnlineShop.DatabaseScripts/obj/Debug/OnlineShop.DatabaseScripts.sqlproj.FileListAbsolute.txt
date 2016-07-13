@@ -1,0 +1,9 @@
+E:\OnlineShop\OnlineShop\OnlineShop.DatabaseScripts\bin\Debug\OnlineShop.DatabaseScripts.dacpac
+E:\OnlineShop\OnlineShop\OnlineShop.DatabaseScripts\bin\Debug\OnlineShop.DatabaseScripts.dll
+E:\OnlineShop\OnlineShop\OnlineShop.DatabaseScripts\bin\Debug\OnlineShop.DatabaseScripts.pdb
+E:\OnlineShop\OnlineShop\OnlineShop.DatabaseScripts\obj\Debug\Model.xml
+E:\OnlineShop\OnlineShop\OnlineShop.DatabaseScripts\obj\Debug\refactor.xml
+E:\OnlineShop\OnlineShop\OnlineShop.DatabaseScripts\obj\Debug\postdeploy.sql
+E:\OnlineShop\OnlineShop\OnlineShop.DatabaseScripts\obj\Debug\predeploy.sql
+E:\OnlineShop\OnlineShop\OnlineShop.DatabaseScripts\obj\Debug\OnlineShop.DatabaseScripts.dll
+E:\OnlineShop\OnlineShop\OnlineShop.DatabaseScripts\obj\Debug\OnlineShop.DatabaseScripts.pdb

@@ -1,0 +1,6 @@
+E:\OnlineShop\OnlineShop\OnlineShop.Tests\bin\Debug\OnlineShop.Tests.dll
+E:\OnlineShop\OnlineShop\OnlineShop.Tests\bin\Debug\OnlineShop.Tests.pdb
+E:\OnlineShop\OnlineShop\OnlineShop.Tests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+E:\OnlineShop\OnlineShop\OnlineShop.Tests\obj\Debug\OnlineShop.Tests.csprojResolveAssemblyReference.cache
+E:\OnlineShop\OnlineShop\OnlineShop.Tests\obj\Debug\OnlineShop.Tests.dll
+E:\OnlineShop\OnlineShop\OnlineShop.Tests\obj\Debug\OnlineShop.Tests.pdb

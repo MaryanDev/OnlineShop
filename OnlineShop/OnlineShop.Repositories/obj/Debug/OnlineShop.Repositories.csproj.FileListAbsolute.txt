@@ -1,0 +1,5 @@
+E:\OnlineShop\OnlineShop\OnlineShop.Repositories\bin\Debug\OnlineShop.Repositories.dll
+E:\OnlineShop\OnlineShop\OnlineShop.Repositories\bin\Debug\OnlineShop.Repositories.pdb
+E:\OnlineShop\OnlineShop\OnlineShop.Repositories\obj\Debug\OnlineShop.Repositories.csprojResolveAssemblyReference.cache
+E:\OnlineShop\OnlineShop\OnlineShop.Repositories\obj\Debug\OnlineShop.Repositories.dll
+E:\OnlineShop\OnlineShop\OnlineShop.Repositories\obj\Debug\OnlineShop.Repositories.pdb
