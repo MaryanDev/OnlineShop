@@ -1,6 +1,5 @@
 E:\OnlineShop\OnlineShop\OnlineShop.Entities\bin\Debug\OnlineShop.Entities.dll
 E:\OnlineShop\OnlineShop\OnlineShop.Entities\bin\Debug\OnlineShop.Entities.pdb
-E:\OnlineShop\OnlineShop\OnlineShop.Entities\obj\Debug\OnlineShop.Entities.csprojResolveAssemblyReference.cache
 E:\OnlineShop\OnlineShop\OnlineShop.Entities\obj\Debug\OnlineShop.Entities.dll
 E:\OnlineShop\OnlineShop\OnlineShop.Entities\obj\Debug\OnlineShop.Entities.pdb
 E:\OnlineShop\OnlineShop\OnlineShop.Entities\bin\Debug\OnlineShop.Entities.dll.config

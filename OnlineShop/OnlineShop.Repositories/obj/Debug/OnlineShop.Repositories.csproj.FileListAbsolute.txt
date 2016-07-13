@@ -7,3 +7,6 @@ E:\OnlineShop\OnlineShop\OnlineShop.Repositories\bin\Debug\OnlineShop.Entities.d
 E:\OnlineShop\OnlineShop\OnlineShop.Repositories\bin\Debug\EntityFramework.dll
 E:\OnlineShop\OnlineShop\OnlineShop.Repositories\bin\Debug\OnlineShop.Entities.pdb
 E:\OnlineShop\OnlineShop\OnlineShop.Repositories\bin\Debug\EntityFramework.xml
+E:\OnlineShop\OnlineShop\OnlineShop.Repositories\bin\Debug\OnlineShop.Repositories.dll.config
+E:\OnlineShop\OnlineShop\OnlineShop.Repositories\bin\Debug\EntityFramework.SqlServer.dll
+E:\OnlineShop\OnlineShop\OnlineShop.Repositories\bin\Debug\EntityFramework.SqlServer.xml
