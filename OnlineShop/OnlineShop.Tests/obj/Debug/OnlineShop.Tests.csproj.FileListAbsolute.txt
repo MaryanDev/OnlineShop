@@ -36,3 +36,9 @@ E:\OnlineShop\OnlineShop\OnlineShop.Tests\bin\Debug\System.Web.Razor.xml
 E:\OnlineShop\OnlineShop\OnlineShop.Tests\bin\Debug\System.Web.WebPages.Razor.xml
 E:\OnlineShop\OnlineShop\OnlineShop.Tests\bin\Debug\System.Web.WebPages.xml
 E:\OnlineShop\OnlineShop\OnlineShop.Tests\bin\Debug\System.Web.WebPages.Deployment.xml
+E:\OnlineShop\OnlineShop\OnlineShop.Tests\bin\Debug\OnlineShop.Tests.dll.config
+E:\OnlineShop\OnlineShop\OnlineShop.Tests\bin\Debug\WebActivatorEx.dll
+E:\OnlineShop\OnlineShop\OnlineShop.Tests\bin\Debug\Ninject.dll
+E:\OnlineShop\OnlineShop\OnlineShop.Tests\bin\Debug\Ninject.Web.Common.dll
+E:\OnlineShop\OnlineShop\OnlineShop.Tests\bin\Debug\Ninject.xml
+E:\OnlineShop\OnlineShop\OnlineShop.Tests\bin\Debug\Ninject.Web.Common.xml

@@ -10,3 +10,9 @@ E:\OnlineShop\OnlineShop\OnlineShop.Repositories\bin\Debug\EntityFramework.xml
 E:\OnlineShop\OnlineShop\OnlineShop.Repositories\bin\Debug\OnlineShop.Repositories.dll.config
 E:\OnlineShop\OnlineShop\OnlineShop.Repositories\bin\Debug\EntityFramework.SqlServer.dll
 E:\OnlineShop\OnlineShop\OnlineShop.Repositories\bin\Debug\EntityFramework.SqlServer.xml
+E:\OnlineShop\OnlineShop\OnlineShop.Repositories\bin\Debug\Microsoft.Web.Infrastructure.dll
+E:\OnlineShop\OnlineShop\OnlineShop.Repositories\bin\Debug\Ninject.dll
+E:\OnlineShop\OnlineShop\OnlineShop.Repositories\bin\Debug\Ninject.Web.Common.dll
+E:\OnlineShop\OnlineShop\OnlineShop.Repositories\bin\Debug\WebActivatorEx.dll
+E:\OnlineShop\OnlineShop\OnlineShop.Repositories\bin\Debug\Ninject.xml
+E:\OnlineShop\OnlineShop\OnlineShop.Repositories\bin\Debug\Ninject.Web.Common.xml

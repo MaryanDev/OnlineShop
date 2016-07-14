@@ -52,3 +52,10 @@ E:\OnlineShop\OnlineShop\OnlineShop.WebUI\bin\OnlineShop.Entities.pdb
 E:\OnlineShop\OnlineShop\OnlineShop.WebUI\bin\OnlineShop.Repositories.pdb
 E:\OnlineShop\OnlineShop\OnlineShop.WebUI\bin\EntityFramework.xml
 E:\OnlineShop\OnlineShop\OnlineShop.WebUI\bin\EntityFramework.SqlServer.xml
+E:\OnlineShop\OnlineShop\OnlineShop.WebUI\bin\Ninject.dll
+E:\OnlineShop\OnlineShop\OnlineShop.WebUI\bin\Ninject.Web.Common.dll
+E:\OnlineShop\OnlineShop\OnlineShop.WebUI\bin\Ninject.Web.Mvc.dll
+E:\OnlineShop\OnlineShop\OnlineShop.WebUI\bin\WebActivatorEx.dll
+E:\OnlineShop\OnlineShop\OnlineShop.WebUI\bin\Ninject.xml
+E:\OnlineShop\OnlineShop\OnlineShop.WebUI\bin\Ninject.Web.Common.xml
+E:\OnlineShop\OnlineShop\OnlineShop.WebUI\bin\Ninject.Web.Mvc.xml
