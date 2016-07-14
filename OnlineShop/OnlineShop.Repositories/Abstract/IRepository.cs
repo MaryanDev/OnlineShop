@@ -13,5 +13,6 @@ namespace OnlineShop.Repositories.Abstract
         TEntity Insert<TEntity>(TEntity entity) where TEntity : class;
         void Delete<TEntity>(Func<TEntity, bool> criteria) where TEntity : class;
         bool Exists<TEntity>(Func<TEntity, bool> criteria = null) where TEntity : class;
+        TEntity Update<TEntity>(TEntity entity) where TEntity : class;
     }
 }

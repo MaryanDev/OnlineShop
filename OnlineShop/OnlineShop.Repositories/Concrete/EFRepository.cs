@@ -17,6 +17,7 @@ namespace OnlineShop.Repositories.Concrete
             using(var context = new ShopEntities())
             {
                 context.Set<TEntity>().Remove(context.Set<TEntity>().SingleOrDefault<TEntity>(criteria));
+                context.SaveChanges();
             }
         }
 
@@ -65,8 +66,20 @@ namespace OnlineShop.Repositories.Concrete
             {
                 insertedEntity = context.Set<TEntity>().Add(entity);
                 context.SaveChanges();
+                return insertedEntity;
             }
-            return insertedEntity;
+        }
+
+        public TEntity Update<TEntity>(TEntity entity) where TEntity : class
+        {
+            using(var context = new ShopEntities())
+            {
+                context.Set<TEntity>().Attach(entity);
+                context.Entry(entity).State = EntityState.Modified;
+
+                context.SaveChanges();
+                return entity;
+            }
         }
     }
 }

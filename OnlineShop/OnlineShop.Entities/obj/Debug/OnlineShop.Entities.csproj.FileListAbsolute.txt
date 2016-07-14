@@ -7,3 +7,4 @@ E:\OnlineShop\OnlineShop\OnlineShop.Entities\bin\Debug\EntityFramework.dll
 E:\OnlineShop\OnlineShop\OnlineShop.Entities\bin\Debug\EntityFramework.SqlServer.dll
 E:\OnlineShop\OnlineShop\OnlineShop.Entities\bin\Debug\EntityFramework.xml
 E:\OnlineShop\OnlineShop\OnlineShop.Entities\bin\Debug\EntityFramework.SqlServer.xml
+E:\OnlineShop\OnlineShop\OnlineShop.Entities\obj\Debug\OnlineShop.Entities.csprojResolveAssemblyReference.cache
