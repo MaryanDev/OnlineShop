@@ -32,7 +32,7 @@ CREATE TABLE Clients
 	BirthDate datetime NOT NULL,
 	[Address] nvarchar(150) NULL,
 	Email nvarchar(70) NOT NULL,
-	PasswordHash uniqueidentifier NOT NULL
+	PasswordHash nvarchar(100) NOT NULL
 );
 
 CREATE TABLE Basket
@@ -59,7 +59,7 @@ CREATE TABLE [Administrators]
 	BirthDate datetime NOT NULL,
 	[Address] nvarchar(150) NULL,
 	Email nvarchar(70) NOT NULL,
-	PasswordHash uniqueidentifier NOT NULL
+	PasswordHash nvarchar(100) NOT NULL
 );
 
 ALTER TABLE Products
