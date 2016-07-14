@@ -7,15 +7,48 @@
 @section HeadScripts{
     <script type="text/javascript" src="~/Areas/Client/Scripts/dashboard/dashboard.service.js"></script>
     <script type="text/javascript" src="~/Areas/Client/Scripts/dashboard/dashboard.controller.js"></script>
+    <script type="text/javascript" src="~/Areas/Client/Scripts/dashboard/rangeFilter.js"></script>
 }
 @section HeadStyles{
 
 }
 
 <div ng-controller="dashboardCtrl">
-    <h3>Categories</h3>
-    <select>
-        <option>All</option>
-        <option ng-repeat="category in categories">{{category}}</option>
-    </select>
+    <div id="leftMenu">
+        <h3>Categories</h3>
+        <table>
+            <tr>
+                <td>
+                    <select ng-model="currentCategory">
+                        <option>All</option>
+                        <option ng-repeat="category in categories">{{category}}</option>
+                    </select>
+                </td>
+                <td>
+                    <input type="submit" ng-click="getPage(undefined,currentCategory)" value="Find"/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="products">
+        <table>
+            <thead>
+                <tr>
+                    <td>Title</td>
+                    <td>Cost</td>
+                    <td>Quantity</td>
+                    <td>Availability</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="product in products">
+                    <td>{{product.Title}}</td>
+                    <td>{{product.Cost}}</td>
+                    <td>{{product.Quantity}}</td>
+                    <td>{{product.IsAvailable ? "Available" : "Not Available"}}</td>
+                </tr>
+            </tbody>
+        </table>
+        <a ng-repeat="page in [] | range: allPages" href="#" ng-click="getPage($index + 1, currentCategory)">{{$index + 1}}</a>
+    </div>
 </div>

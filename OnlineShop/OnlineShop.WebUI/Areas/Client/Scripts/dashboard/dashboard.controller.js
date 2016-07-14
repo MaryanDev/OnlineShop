@@ -5,6 +5,9 @@
 
     function dashboardCtrl($scope, dashboardService) {
         $scope.categories = null;
+        $scope.products = null;
+        $scope.allPages = null;
+        $scope.currentCategory = "All";
 
         function activate() {
             dashboardService.getCategories()
@@ -14,7 +17,27 @@
                             }, function myError(responce) {
                                 console.log(responce.statusText)
                             });
+
+            dashboardService.getProducts()
+                            .then(function (responce) {
+                                $scope.products = responce.data.products;
+                                $scope.allPages = responce.data.allPages;
+                                console.log($scope.products);
+                            }, function myError(responce) {
+                                console.log(responce.statusText);
+                            });
         }
         activate();
+
+        $scope.getPage = function (page, category) {
+            dashboardService.getProducts(page, category)
+                            .then(function (responce) {
+                                $scope.products = responce.data.products;
+                                $scope.allPages = responce.data.allPages;
+                                console.log($scope.products);
+                            }, function myError(responce) {
+                                console.log(responce.statusText);
+                            });
+        };
     }
 })(angular);

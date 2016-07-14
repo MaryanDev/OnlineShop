@@ -143,6 +143,7 @@
   <ItemGroup>
     <Content Include="Areas\Client\Scripts\dashboard\dashboard.controller.js" />
     <Content Include="Areas\Client\Scripts\dashboard\dashboard.service.js" />
+    <Content Include="Areas\Client\Scripts\dashboard\rangeFilter.js" />
     <Content Include="Global.asax" />
     <Content Include="scripts\ai.0.22.9-build00167.js" />
     <Content Include="scripts\ai.0.22.9-build00167.min.js" />
