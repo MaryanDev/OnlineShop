@@ -4,8 +4,18 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Index</h2>
-@foreach(var item in Model)
-{
-    <div>@item.Name</div>
+@section HeadScripts{
+    <script type="text/javascript" src="~/Areas/Client/Scripts/dashboard/dashboard.service.js"></script>
+    <script type="text/javascript" src="~/Areas/Client/Scripts/dashboard/dashboard.controller.js"></script>
 }
+@section HeadStyles{
+
+}
+
+<div ng-controller="dashboardCtrl">
+    <h3>Categories</h3>
+    <select>
+        <option>All</option>
+        <option ng-repeat="category in categories">{{category}}</option>
+    </select>
+</div>

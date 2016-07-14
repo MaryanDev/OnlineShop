@@ -18,10 +18,16 @@ namespace OnlineShop.WebUI.Areas.Client.Controllers
         }
 
         // GET: Client/Dashboard
+        [HttpGet]
         public ActionResult Index()
         {
-            var model = _repository.Get<Category>();
-            return View(model);
+            return View();
+        }
+
+        public JsonResult GetCategories()
+        {
+            var categories = _repository.Get<Category>().Select(c => c.Name);
+            return Json(categories , JsonRequestBehavior.AllowGet);
         }
     }
 }
