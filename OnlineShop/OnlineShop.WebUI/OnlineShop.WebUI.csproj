@@ -141,9 +141,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Areas\Client\Scripts\dashboard\dashboard.controller.js" />
-    <Content Include="Areas\Client\Scripts\dashboard\dashboard.service.js" />
-    <Content Include="Areas\Client\Scripts\dashboard\rangeFilter.js" />
+    <Content Include="Areas\User\Scripts\dashboard\dashboard.controller.js" />
+    <Content Include="Areas\User\Scripts\dashboard\dashboard.service.js" />
+    <Content Include="Areas\User\Scripts\dashboard\rangeFilter.js" />
     <Content Include="Global.asax" />
     <Content Include="scripts\ai.0.22.9-build00167.js" />
     <Content Include="scripts\ai.0.22.9-build00167.min.js" />
@@ -155,8 +155,9 @@
     <Compile Include="App_Start\NinjectWebCommon.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Areas\Administrator\AdministratorAreaRegistration.cs" />
-    <Compile Include="Areas\Client\ClientAreaRegistration.cs" />
-    <Compile Include="Areas\Client\Controllers\DashboardController.cs" />
+    <Compile Include="Areas\User\ClientAreaRegistration.cs" />
+    <Compile Include="Areas\User\Controllers\DashboardController.cs" />
+    <Compile Include="Areas\User\Models\SearchProductInfo.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -170,9 +171,9 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Areas\Client\Views\web.config" />
+    <Content Include="Areas\User\Views\web.config" />
     <Content Include="Areas\Administrator\Views\web.config" />
-    <Content Include="Areas\Client\Views\Dashboard\Index.cshtml" />
+    <Content Include="Areas\User\Views\Dashboard\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -185,8 +186,7 @@
     <Folder Include="Areas\Administrator\Controllers\" />
     <Folder Include="Areas\Administrator\Models\" />
     <Folder Include="Areas\Administrator\Views\Shared\" />
-    <Folder Include="Areas\Client\Models\" />
-    <Folder Include="Areas\Client\Views\Shared\" />
+    <Folder Include="Areas\User\Views\Shared\" />
     <Folder Include="Controllers\" />
     <Folder Include="Models\" />
   </ItemGroup>

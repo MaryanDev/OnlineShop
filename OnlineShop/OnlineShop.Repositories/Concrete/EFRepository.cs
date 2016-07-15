@@ -7,6 +7,7 @@ using OnlineShop.Repositories.Abstract;
 using OnlineShop.Entities;
 using System.Data.Entity;
 using System.Data.Entity.Infrastructure;
+using System.Linq.Expressions;
 
 namespace OnlineShop.Repositories.Concrete
 {
@@ -31,13 +32,14 @@ namespace OnlineShop.Repositories.Concrete
             return resultEntity == null ? false : true;
         }
 
-        public IEnumerable<TEntity> Get<TEntity>(Func<TEntity, bool> criteria = null) where TEntity : class
+        public IEnumerable<TEntity> Get<TEntity>(Func<TEntity, bool> criteria = null, params Expression<Func<TEntity, object>>[] paths) where TEntity : class
         {
             using(var context = new ShopEntities())
             {
-                IEnumerable<TEntity> query =  context.Set<TEntity>();
+                IQueryable<TEntity> query =  context.Set<TEntity>();
+                query = IncludePaths(paths, query);
 
-                if(criteria != null)
+                if (criteria != null)
                 {
                     query = query.Where(criteria).AsQueryable();
                 }
@@ -45,11 +47,12 @@ namespace OnlineShop.Repositories.Concrete
             }
         }
 
-        public TEntity GetSingle<TEntity>(Func<TEntity, bool> criteria = null) where TEntity : class
+        public TEntity GetSingle<TEntity>(Func<TEntity, bool> criteria = null, params Expression<Func<TEntity, object>>[] paths) where TEntity : class
         {
             using (var context = new ShopEntities())
             {
-                IEnumerable<TEntity> query = context.Set<TEntity>();
+                IQueryable<TEntity> query = context.Set<TEntity>();
+                query = IncludePaths(paths, query);
 
                 if (criteria != null)
                 {
@@ -80,6 +83,18 @@ namespace OnlineShop.Repositories.Concrete
                 context.SaveChanges();
                 return entity;
             }
+        }
+
+        private IQueryable<TEntity> IncludePaths<TEntity>(Expression<Func<TEntity, object>>[] paths, IQueryable<TEntity> query) where TEntity : class
+        {
+            if (paths != null)
+            {
+                foreach (var path in paths)
+                {
+                    query = query.Include(path);
+                }
+            }
+            return query;
         }
     }
 }

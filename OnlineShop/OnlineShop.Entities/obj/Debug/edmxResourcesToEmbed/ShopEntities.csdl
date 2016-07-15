@@ -10,7 +10,7 @@
     <Property Name="BirthDate" Type="DateTime" Nullable="false" Precision="3" />
     <Property Name="Address" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
     <Property Name="Email" Type="String" MaxLength="70" FixedLength="false" Unicode="true" Nullable="false" />
-    <Property Name="PasswordHash" Type="Guid" Nullable="false" />
+    <Property Name="PasswordHash" Type="String" Nullable="false" />
     <NavigationProperty Name="Products" Relationship="Self.FK_Admin_To_Prod" FromRole="Administrators" ToRole="Products" />
   </EntityType>
   <EntityType Name="Basket">
@@ -42,7 +42,7 @@
     <Property Name="BirthDate" Type="DateTime" Nullable="false" Precision="3" />
     <Property Name="Address" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
     <Property Name="Email" Type="String" MaxLength="70" FixedLength="false" Unicode="true" Nullable="false" />
-    <Property Name="PasswordHash" Type="Guid" Nullable="false" />
+    <Property Name="PasswordHash" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
     <NavigationProperty Name="Baskets" Relationship="Self.FK_Basket_To_Client" FromRole="Clients" ToRole="Basket" />
     <NavigationProperty Name="Comments" Relationship="Self.FK_Comment_To_Client" FromRole="Clients" ToRole="Comments" />
   </EntityType>

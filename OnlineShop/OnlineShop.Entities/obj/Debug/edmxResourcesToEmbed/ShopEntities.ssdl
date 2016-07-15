@@ -10,7 +10,7 @@
     <Property Name="BirthDate" Type="datetime" Nullable="false" />
     <Property Name="Address" Type="nvarchar" MaxLength="150" />
     <Property Name="Email" Type="nvarchar" MaxLength="70" Nullable="false" />
-    <Property Name="PasswordHash" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="PasswordHash" Type="nvarchar" MaxLength="100" Nullable="false" />
   </EntityType>
   <EntityType Name="Basket">
     <Key>
@@ -38,7 +38,7 @@
     <Property Name="BirthDate" Type="datetime" Nullable="false" />
     <Property Name="Address" Type="nvarchar" MaxLength="150" />
     <Property Name="Email" Type="nvarchar" MaxLength="70" Nullable="false" />
-    <Property Name="PasswordHash" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="PasswordHash" Type="nvarchar" MaxLength="100" Nullable="false" />
   </EntityType>
   <EntityType Name="Comments">
     <Key>
