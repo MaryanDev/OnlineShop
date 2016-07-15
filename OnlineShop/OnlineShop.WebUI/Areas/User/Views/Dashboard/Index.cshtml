@@ -10,61 +10,45 @@
     <script type="text/javascript" src="~/Areas/User/Scripts/dashboard/rangeFilter.js"></script>
 }
 @section HeadStyles{
-
+    <link href="~/Areas/User/Styles/dashboard.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap-theme.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    
 }
 
-<div ng-controller="dashboardCtrl">
-    <div id="leftMenu">
+<div ng-controller="dashboardCtrl" id="dashboardBody">
+    <div id="leftMenu" class="text-center">
         <h3>Categories</h3>
-        <table>
-            <tr>
-                <td>
-                    <select ng-model="currentCategory">
-                        <option>All</option>
-                        <option ng-repeat="category in categories">{{category}}</option>
-                    </select>
-                </td>
-                <td>
-                    {{minChoiceCost == ubdefined ? 0 : minChoiceCost}}<br />
-                    <input type="range" ng-model="minChoiceCost" min="0" max="{{maxCost}}" step="10"/>
-                </td>
-                <td>
-                    {{maxChoiceCost == undefined ? 0 : maxChoiceCost}}<br />
-                    <input type="range" ng-model="maxChoiceCost" min="0" max="{{maxCost}}" step="10" />
-                </td>
-                <td>
-                    Title <br />
-                    <input type="text" ng-model="searchedTitle" placeholder="type title"/>
-                </td>
-                <td>
-                    <input type="submit" ng-click="getPage(undefined, currentCategory, minChoiceCost, maxChoiceCost, searchedTitle)" value="Find"/>
-                </td>
-            </tr>
-        </table>
+        <div>
+            <select ng-model="currentCategory">
+                <option>All</option>
+                <option ng-repeat="category in categories">{{category}}</option>
+            </select>
+        </div>
+        <div>
+            {{minChoiceCost == ubdefined ? 0 : minChoiceCost}}<br />
+            <input type="range" ng-model="minChoiceCost" min="0" max="{{maxCost}}" step="10" />
+        </div>
+        <div>
+            {{maxChoiceCost == undefined ? 0 : maxChoiceCost}}<br />
+            <input type="range" ng-model="maxChoiceCost" min="0" max="{{maxCost}}" step="10" />
+        </div>
+        <div>
+            Title <br />
+            <input type="text" ng-model="searchedTitle" placeholder="type title" />
+        </div>
+        <div>
+            <input type="submit" ng-click="getPage(undefined, currentCategory, minChoiceCost, maxChoiceCost, searchedTitle)" value="Find" />
+        </div>
     </div>
-    <div id="products">
-        <table>
-            <thead>
-                <tr>
-                    <th>Title</th>
-                    <th>Cost</th>
-                    <th>Quantity</th>
-                    <th>Category</th>
-                    <th>Availability</th>
-                    <th>Commentaries</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr ng-repeat="product in products">
-                    <td>{{product.Title}}</td>
-                    <td>{{product.Cost}}</td>
-                    <td>{{product.Quantity}}</td>
-                    <td>{{product.ProdCategory}}</td>
-                    <td>{{product.IsAvailable ? "Available" : "Not Available"}}</td>
-                    <td><div ng-repeat="comment in product.Commentaries">{{comment.CommentText}} <hr /> {{comment.ClientName}}</div></td>
-                </tr>
-            </tbody>
-        </table>
-        <a ng-repeat="page in [] | range: allPages" href="#" ng-click="getPage($index + 1, currentCategory)">{{$index + 1}}</a>
+    <div id="products" class="container panel text-center">
+        <div id="prodArea" ng-repeat="product in products">
+            <h3>{{product.Title}}</h3>
+            <h5>Category: {{product.ProdCategory}}</h5>
+            <h4>{{product.IsAvailable ? "Available" : "Not Available"}}</h4>
+            <h4>Cost: {{product.Cost}}$</h4>
+            <hr />
+        </div>
+        <ul class="pagination"><li ng-repeat="product in products"><a href="#" ng-click="getPage($index + 1, currentCategory)">{{$index + 1}}</a></li></ul>
     </div>
 </div>
