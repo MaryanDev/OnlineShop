@@ -6,10 +6,22 @@
     <title>@ViewBag.Title</title>
     <script src="~/scripts/angular/angular.min.js"></script>
     <script type="text/javascript" src="~/scripts/app/shop.module.js"></script>
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap-theme.css" rel="stylesheet" />
     @RenderSection("HeadScripts", false)
     @RenderSection("HeadStyles", false)
 </head>
 <body ng-app="shopModule">
+    @if (IsSectionDefined("PageHeader"))
+    {
+        RenderSection("PageHeader");
+    }
+    else
+    {
+        <header class="page-header">
+
+        </header>
+    }
     <div>
         @RenderBody()
     </div>

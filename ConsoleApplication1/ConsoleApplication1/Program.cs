@@ -11,20 +11,40 @@ namespace ConsoleApplication1
     {
         static void Main(string[] args)
         {
-            MyClass m = new MyClass();
-            Console.WriteLine(m.Field);//10
+            try
+            {
+                Method2();
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine(ex.TargetSite);
+                Console.ReadLine();
+            }
+        }
 
-            Type t = m.GetType();
-            t.GetField("_field",  BindingFlags.NonPublic | BindingFlags.Instance).SetValue(m, 15);
+        static void Method1()
+        {
+            try
+            {
+                throw new Exception();
+            }
+            catch(Exception ex)
+            {
+                throw;
+            }
+        }
 
-            Console.WriteLine(m.Field);//15
+        static void Method2()
+        {
+            try
+            {
+                Method1();
+            }
+            catch(Exception ex)
+            {
+                throw ex;
+            }
         }
     }
 
-    class MyClass
-    {
-        private int _field = 10;
-
-        public int Field { get { return _field; } }
-    }
 }

@@ -7,7 +7,8 @@
     function dashboardService($http) {
         var service = {
             getCategories: getCategoriesAjax,
-            getProducts: getProductsAjax
+            getProducts: getProductsAjax,
+            sendComment: sendCommentAjax
         };
 
         return service;
@@ -31,5 +32,10 @@
             });
             return promise;
         };
+
+        function sendCommentAjax(productId, commentText) {
+            var promise = $http.post("AddComment", data = {id: productId, comment: commentText});
+            return promise;
+        }
     }
 })(angular);

@@ -12,7 +12,7 @@ namespace OnlineShop.WebUI.Areas.User.Controllers
     public class DashboardController : Controller
     {
         private IRepository _repository;
-        private const int PageSize = 10;
+        private const int PageSize = 6;
 
         public DashboardController(IRepository repoParam)
         {
@@ -38,17 +38,19 @@ namespace OnlineShop.WebUI.Areas.User.Controllers
             var products = (category == "All" ?
                 _repository.Get<Product>(p => p.Cost >= minChoiceCost
                     && p.Cost <= maxChoiceCost
-                    && p.Title.Contains(searchedTitle),
+                    && p.Title.ToLower().Contains(searchedTitle.ToLower()),
                     p => p.Category,
                     p => p.Comments)
                 :
                 _repository.Get<Product>(p => p.Category.Name == category
                     && p.Cost >= minChoiceCost
                     && p.Cost <= maxChoiceCost
-                    && p.Title.Contains(searchedTitle),
+                    && p.Title.ToLower().Contains(searchedTitle.ToLower()),
                     p => p.Category,
                     p => p.Comments)).Select(p => new
                 {
+                    Id = p.Id,
+                    ShowComments = false,
                     Title = p.Title,
                     Cost = p.Cost,
                     Quantity = p.Quantity,
@@ -59,14 +61,32 @@ namespace OnlineShop.WebUI.Areas.User.Controllers
                         CommentText = c.Text,
                         ClientName = _repository.GetSingle<Client>(cl=> cl.Id == c.ClientId).FirstName + " " + _repository.GetSingle<Client>(cl => cl.Id == c.ClientId).LastName
                     })
-                }); 
-
-            int count = products.Count() / PageSize;
-            decimal maxCost = products.Max(p => p.Cost);
+                });
+            int pages = products.Count() / PageSize;
+            int count = products.Count() % PageSize == 0 ? pages : ++pages;
+            decimal maxCost = products.Count() != 0 ? products.Max(p => p.Cost) : 0;
 
             products = products.Skip((currentPage - 1) * PageSize).Take(PageSize);
 
             return Json(new { products = products, allPages = count, maxCost = maxCost }, JsonRequestBehavior.AllowGet);
+        }
+
+        [HttpPost]
+        public JsonResult AddComment(int id, string comment)
+        {
+            var newComment = _repository.Insert<Comment>(new Comment
+            {
+                Text = comment,
+                ProductId = id,
+                ClientId = 1
+            });
+
+            var result = new
+            {
+                CommentText = newComment.Text,
+                ClientName = _repository.GetSingle<Client>(cl => cl.Id == newComment.ClientId).FirstName + " " + _repository.GetSingle<Client>(cl => cl.Id == newComment.ClientId).LastName
+            };
+            return Json(result);
         }
     }
 }

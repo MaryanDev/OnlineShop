@@ -1,8 +1,44 @@
 ﻿#leftMenu{
-    margin-right: 25%;
-    margin-left: 25%;
-    background-color: white;
+    float:left;
+    border-radius: 10px;
+    padding-bottom:15px;
 }
-/*#products{
+#leftMenu input:last-child{
+    margin-top:10px;
+}
+#leftMenu span{
+    font-size: 12pt;
+}
+#products{
     float: right;
-}*/
+}
+#prodArea{
+    margin-left:30px;
+    border-radius: 10px;
+    padding-bottom: 0px;
+    background-color:aliceblue;
+    padding-left: 15px;
+    padding-top: 15px;
+}
+
+#prodArea a{
+    cursor:pointer;
+    text-decoration: none;
+}
+#prodArea label{
+    cursor: pointer;
+    background-color:lightblue;
+    color:white;
+    border-radius:7px;
+    padding: 5px;
+}
+#comment{
+    padding:10px;
+}
+#leaveComment input{
+    margin-top:15px;
+}
+.container{
+    padding-top: 20px;
+}
+
